@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/safearea.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -35,7 +37,7 @@ class MyHomePage extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) {
-                      return SecondPage();
+                      return SafeAreaPage();
                     },
                   ),
                 );
