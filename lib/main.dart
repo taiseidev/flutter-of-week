@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/expanded.dart';
 import 'widgets/safearea.dart';
 
 void main() {
@@ -43,6 +44,18 @@ class MyHomePage extends StatelessWidget {
                 );
               },
               child: const Text('SafeArea'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return ExpandedPage();
+                    },
+                  ),
+                );
+              },
+              child: const Text('Expanded'),
             ),
           ],
         ),
