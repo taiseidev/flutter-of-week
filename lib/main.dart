@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:packagetest/widgets/wrap.dart';
 
 import 'widgets/expanded.dart';
 import 'widgets/safearea.dart';
@@ -56,6 +57,18 @@ class MyHomePage extends StatelessWidget {
                 );
               },
               child: const Text('Expanded'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return WrapPage();
+                    },
+                  ),
+                );
+              },
+              child: const Text('Wrap'),
             ),
           ],
         ),
