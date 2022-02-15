@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:packagetest/widgets/wrap.dart';
 
+import 'widgets/animated_container.dart';
 import 'widgets/expanded.dart';
 import 'widgets/safearea.dart';
 
@@ -69,6 +70,18 @@ class MyHomePage extends StatelessWidget {
                 );
               },
               child: const Text('Wrap'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return AnimatedContainerPage();
+                    },
+                  ),
+                );
+              },
+              child: const Text('AnimatedContainer'),
             ),
           ],
         ),
