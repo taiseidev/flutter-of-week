@@ -1,4 +1,4 @@
-# packagetest
+# Flutter Widget of the weekで紹介されているWidgetの学習
 
 A new Flutter project.
 
